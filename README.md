@@ -11,12 +11,11 @@ The user will be given a menu to choose from the following options:
 ```
 Students’ information should be loaded from the “student database.txt” into an array of structs.
 
-For user option# 1, display students record(one record per line).
+For user option# 1, display students record (one record per line).
 
-For user option#2, prompt the user to enter an ID and search for it in the array of structs that contain the students’ information.If found, display the student record otherwise print that student ID does not exist.
+For user option#2, prompt the user to enter an ID and search for it in the array of structs that contain the students’ information. If found, display the student record otherwise print that student ID does not exist.
 
-For user option#3, display the count of students per campus. You are required to create an enum with the college campuses(Downtown, East, and West) and use them in a switch statement to perform the count. For this 
-option your display will look like the following example
+For user option#3, display the count of students per campus. You are required to create an enum with the college campuses (Downtown, East, and West) and use them in a switch statement to perform the count. For this option your display will look like the following example
 ```Text
   East Campus : 5 students
   West Campus : 3 students
