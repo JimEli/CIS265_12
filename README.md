@@ -26,6 +26,7 @@ After every operation completion, you need to re-display the menu until the user
 Notes:
 * Needs more input validation.
 * Implements a linked-list of Students (struct).
+* Includes simplistic debug malloc/free tracking functions (compiled in debug version).
 * Compiled with MS Visual Studio 2017 Community (v141), using C language options.
 
 *Submitted in partial fulfillment of the requirements of PCC CIS-265.*
