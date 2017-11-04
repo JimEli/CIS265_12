@@ -16,13 +16,12 @@
 * Change Log:
 *   10/14/2017: Initial release. JME
 *************************************************************************/
-#include <assert.h> 
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <string.h>
-
 #include "student_list.h"
+
+// Debug memory allocation routines.
+#ifdef _DEBUG
+#include "debugMalloc.h"
+#endif
 
 // C/C++ Preprocessor Definitions: _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996) 
@@ -72,6 +71,7 @@ bool addStudent(char *buffer) {
 		fputs("Insufficient memory available.\n", stderr);
 		return false;
 	}
+
 	// Fill structure data items.
 	if (!fillStructure(s, buffer))
 		return false;
@@ -98,8 +98,7 @@ void searchForStudentID(const unsigned int id) {
 				s->name, s->id, majorLabels[s->campus], campusLabels[s->campus]);
 			return;
 		}
-		else
-			s = s->next; // Advance to next element.
+		s = s->next; // Advance to next element.
 	}
 	fprintf(stdout, "No student with ID: %06d found.\n", id);
 	// No macth found.
