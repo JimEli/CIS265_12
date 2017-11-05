@@ -17,11 +17,8 @@
 *   10/14/2017: Initial release. JME
 *************************************************************************/
 #include "student_list.h"
-
-#ifdef _DEBUG
 // Debug memory allocation routines.
 #include "dbgMalloc.h"
-#endif
 
 // C/C++ Preprocessor Definitions: _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996) 

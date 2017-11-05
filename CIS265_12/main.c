@@ -5,7 +5,7 @@
 * Date: 9/11/2017
 *
 * Develop a C program to work with structures and enumerations. The project 
-* uses the comma separated values(CSV) ‚Äústudent database.txt‚Äù
+* uses the comma separated values(CSV) ìstudent database.txtî
 *
 * The user will be given a menu to choose from the following options:
 *   1 - Press(D) to display all students records information
@@ -13,13 +13,13 @@
 *   3 - Press(C) to provide a count of students per campus
 *   4 - Press(Q) to quit
 *
-* Students‚Äô information should be loaded from the ‚Äústudent database.txt‚Äù 
+* Studentsí information should be loaded from the ìstudent database.txtî 
 * into an array of structs.
 *
 * For user option# 1, display students record(one record per line).0
 *
 * For user option#2, prompt the user to enter an ID and search for it in the 
-* array of structs that contain the students‚Äô information.If found, display 
+* array of structs that contain the studentsí information.If found, display 
 * the student record otherwise print that student ID does not exist.
 *
 * For user option#3, display the count of students per campus. You are 
@@ -48,10 +48,8 @@
 *************************************************************************/
 #include "student_list.h"
 
-#ifdef _DEBUG
 // Debug memory allocation routines.
 #include "dbgMalloc.h"
-#endif
 
 // C/C++ Preprocessor Definitions: _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996) 
