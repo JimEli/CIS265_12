@@ -42,8 +42,12 @@ void _debugFree(void *pMem, char *file, int line) {
 	}
 }
 
-// Macros defined after our replacement functions.
-#define malloc(size) _debugMalloc(size, __FILE__, __LINE__)
-#define free(p) _debugFree(p, __FILE__, __LINE__)
+void _debugExit(int const status) {
+	if (currentMemory) {
+		fprintf(stdout, "\nWARNING: Allocated memory (%d) not freed!\n", currentMemory);
+		while (getchar() != EOF);
+	}
+	exit(status);
+}
 
 #endif
