@@ -47,8 +47,6 @@
 *   10/14/2017: Moved linked list code to separate file. JME
 *************************************************************************/
 #include "student_list.h"
-// Debug memory allocation routines.
-#include "dbgMalloc.h"
 
 // C/C++ Preprocessor Definitions: _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996) 
